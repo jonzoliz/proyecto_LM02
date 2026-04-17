@@ -1,0 +1,85 @@
+#fondo_portada{  
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
+    background-size: cover;/* La imagen cubre toda la pantalla sin deformarse */
+    background-repeat: no-repeat;/* No deja que la imagen se repita como mosaico */
+    background-attachment: fixed;/* La imagen se queda quieta mientras haces scroll */
+    background-position: center;/* Centra la imagen siempre */
+
+    min-height: 100vh;            /* Asegura que el fondo cubra al menos el 100% del alto de la pantalla */
+    font-family: 'Tahoma', sans-serif;
+
+}
+
+header {
+    top: 0; /* top: 0: Pega el elemento exactamente al borde superior de la ventana */
+    width: 100%; /* width: 100%: Hace que el menú ocupe todo el ancho horizontal de la pantalla */
+    background-color: rgba(14, 61, 27, 0.7); /* Azul del parque con transparencia */
+    /*position: fixed; /*te va a seguir la barra de navegacion al bajar*/
+    position: static; /*te va a seguir la barra de navegacion al bajar*/
+    /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+    z-index: 10; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+}
+
+
+#contenedor_icono {
+    padding-top: 75px; /*espacio entre el titulo y la barra*/
+    padding-bottom: 200px; /* padding-bottom: 50px: Deja un espacio de "respiro" antes de llegar al footer */
+}
+#contenedor_icono::before {
+    content: "";
+    background-image: url('../img/iconosurfcity3.png'); /* le cambie la imagen anterior por una nueva*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    z-index: 5;
+}
+/*x*/
+#contenedor_icono{
+    flex-direction: column;
+}
+ul {
+    list-style: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Elimina el padding predeterminado de las listas */
+    margin: 0; /* Elimina el margen predeterminado de las listas */
+}
+
+/*Jon*/
+footer {
+    background-color: rgba(14, 61, 27,0.4); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 30px;
+    width: 100%;
+    font-size: 1em;
+    
+}
+
+.pregunta{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style: none;
+}
+
+.tarjeta_historia {
+ 
+  /* Bordes redondeados y estilo de tarjeta */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Un borde sutil para definir la forma */
+  
+  /* Espaciado y sombra */
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  /* Ajustes de texto */
+  color: white;
+  max-width: 85%; /* Para que no se estire demasiado en pantallas grandes */
+  margin: 20px auto;
+}
