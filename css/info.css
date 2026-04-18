@@ -33,7 +33,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 20px;
+    top: 70px;
     left: 50px;
     width: 80px;
     height: 80px;
@@ -66,21 +66,4 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
     list-style: none;
-}
-.imagen {
-    width: 100%;
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-    .imagen {
-        width: 70%;
-    }
-}
-
-/* Computadora */
-@media (min-width: 992px) {
-    .imagen {
-        width: 50%;
-    }
 }
