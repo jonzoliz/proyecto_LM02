@@ -1,6 +1,6 @@
 #fondo_portada{  
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/parqueimg1.jpeg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
     background-size: cover;/* La imagen cubre toda la pantalla sin deformarse */
     background-repeat: no-repeat;/* No deja que la imagen se repita como mosaico */
     background-attachment: fixed;/* La imagen se queda quieta mientras haces scroll */
@@ -14,7 +14,7 @@
 header {
     top: 0; /* top: 0: Pega el elemento exactamente al borde superior de la ventana */
     width: 100%; /* width: 100%: Hace que el menú ocupe todo el ancho horizontal de la pantalla */
-    background-color: rgba(14, 61, 27, 0.7); /* Azul del parque con transparencia */
+    background-color: rgba(61, 52, 14, 0.7); /* Azul del parque con transparencia */
     /*position: fixed; /*te va a seguir la barra de navegacion al bajar*/
     position: static; /*te va a seguir la barra de navegacion al bajar*/
     /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
@@ -51,7 +51,7 @@ ul {
 
 /*Jon*/
 footer {
-    background-color: rgba(14, 61, 27,0.4); 
+    background-color: rgba(61, 52, 14,0.4); 
     color: white;
     text-align: center;
     padding: 20px;
@@ -66,20 +66,4 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
     list-style: none;
-}
-
-.tarjeta_historia {
- 
-  /* Bordes redondeados y estilo de tarjeta */
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Un borde sutil para definir la forma */
-  
-  /* Espaciado y sombra */
-  padding: 30px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  
-  /* Ajustes de texto */
-  color: white;
-  max-width: 85%; /* Para que no se estire demasiado en pantallas grandes */
-  margin: 20px auto;
 }

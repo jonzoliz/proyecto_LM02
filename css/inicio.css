@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+     
+}
+/* esta es la imagen de fondo solo de la portada*/
+#fondo_portada{  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+
+}
+/* 3. Estilo del Menú de Navegación */
+header {
+    position: absolute; /* Para que flote sobre la imagen */
+    top: 0;
+    width: 100%;
+    background-color: rgb(14, 61, 27, 0.7); 
+}
+
+/*este es el estilo del icono*/
+#contenedor_icono {
+    position: relative;
+    padding-left: 70px;
+    min-height: 60px;
+}
+
+#contenedor_icono::before {
+    content: "";
+    background-image: url('../img/iconosurfcity3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    z-index: 5;
+}
+
+
+nav ul {
+    list-style: none; /* Quita los puntitos de la lista */
+    display: flex; /* Pone los elementos uno al lado del otro */
+    justify-content: left;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;/* Evita que los elementos se salgan de la barra */
+    padding: 10px 20px;
+    
+} 
+
+nav li {
+    margin: 0 20px;
+}
+
+.menu1{
+    
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;/* JS.IMPORTATE: agregué este apartado porque no funcionaban los enlaces a otras paginas*/
+    z-index: 999;/* esto permite que se muestresobre todos los elementos y contenedores*/
+}
+
+.ul1{
+    list-style: none; /* Quita los puntitos de la lista */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 65px;
+}
+.nav1{
+    height: 185vh; 
+}
+
+main { 
+    /* para centrar el texto vertical y horizontalmente */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(225, 208, 133); /* Color que cambia le pasamos el mouse */
+}
+
+/* 4. Estilo del texto y botón central */
+
+.estilo_titulos {
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 3rem; 
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 3px 3px 10px rgba(0, 56, 147, 0.8);  
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*estilo para los botones*/
+button {
+    background-color: #1013cc;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #1ba6fc;
+}
+
+/* Estilo del Footer */
+footer {
+    background-color: rgb(14, 61, 27,0.4); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 30px;
+    width: auto;
+    font-size: 1em;
+    
+}
+/* Contenedor de informacióndel Párrafo inferior */
+#parrafo_principal {
+    text-align: center;
+    padding: 15px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
