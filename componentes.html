@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Parque de Aventuras Surf City Walter Thilo Deininger</title>
+</head>
+
+<body class="bg-dark text-white">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">LME</a>
+          <!-- boton hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_principal" aria-controls="menu_principal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- CONTENIDO DEL MENÚ -->
+        <div class="collapse navbar-collapse" id="menu_principal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Untitled-1.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rejilla">Sistema de rejilla</a></li>
+                <li class="nav-item"><a class="nav-link" href="#puntos_quiebre">Breakpoints</a></li>
+                <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
+                <li class="nav-item"><a class="nav-link" href="informacion.html">Sitio web</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- SECCIONES -->
+<div class="container mt-5 pt-5">
+
+<!-- Seccion de componentes adaptativos -->
+<section id="componentes_seccion" class="py-5"> 
+    <div class="container"> 
+        <h2 class="mb-4">Componentes Adaptativos</h2> 
+        <div class="row"> 
+            <!-- 1. Ejemplo de Carrusel--> 
+            <div class="col-12 col_md_6 col_lg_4 mb-4"> 
+                <div id="carrusel_ejemplo" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner rounded"> 
+              <div class="carousel-item active">
+                  <img src="img/entrada1.png" class="d-block mx-auto" style="height: 300px; width: 500px; object-fit: cover;" alt="Foto 1">
+                    </div>
+              <div class="carousel-item">
+                  <img src="img/entrada3.jpg" class="d-block mx-auto" style="height: 300px; width: 500px; object-fit: cover;" alt="Foto 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/nacimiento1.jpg" class="d-block mx-auto" style="height: 300px; width: 500px; object-fit: cover;" alt="Foto 3">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/rapel.jpg" class="d-block mx-auto" style="height: 300px; width: 500px; object-fit: cover;" alt="Foto 4">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mirador1.jpg" class="d-block mx-auto" style="height: 300px; width: 500px; object-fit: cover;" alt="Foto 4">
+              </div>
+                    </div> 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_ejemplo" data-bs-slide="prev"> 
+                        <span class="carousel-control-prev-icon"></span> 
+                    </button> 
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel_ejemplo" data-bs-slide="next"> 
+                        <span class="carousel-control-next-icon"></span> 
+                    </button> 
+                </div> 
+                <p class="mt-2 text-center">Fotos del parque</p> 
+            </div> 
+
+            <!-- 2. Ejemplo de Modal--> 
+            <div class="col-12 col_md_6 col_lg_4 mb-4 text-center"> 
+                <div class="p-4 border border-secondary rounded"> 
+                    <h5>Danos un Like y apoya al sitio web</h5> 
+                    <!-- Boton para activar el modal--> 
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mi_modal_tarea"> Dar Like </button> 
+                </div> 
+            </div> 
+
+            <!-- Ejemplo de Tarjeta Informativa--> 
+  <div class="col-12 col_md_6 col_lg_4 mb-4"> 
+    <div class="card bg-secondary text-white h-100"> 
+        <img src="img/iformar2.png" class="card-img-top mx-auto" style="height: 300px; width: 100%; object-fit: contain; background-color: #000;" alt="Card"> 
+        <div class="card-body text-center"> 
+            <h5 class="card_title">Tarjeta Informativa</h5> 
+            <p class="card-text">Tarifas:
+
+        Entrada nacional $5.00
+        Entrada extranjeros: $10.00
+        Horario:
+
+        De miércoles a domingo abierto de 8:00 a.m. a 4:00 p.m.
+        Lunes y martes cerrado por mantenimiento
+        Caminatas:
+
+        La caminata ”Sendero Camino a la Aventura” tiene una duración de 4 horas y su horario es a las 9:00 am.
+        La caminata ”Sendero Ruta de la Mariposa” tiene una duración de 4 horas y su horarios de salida es a las 10:00 am.</p> 
+        </div> 
+    </div> 
+</div>
+
+        </div> 
+    </div> 
+</section>
+
+
+<!-- cdigo del modal -->
+<div class="modal fade text-dark" id="mi_modal_tarea" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal_titulo">¡Like Guardado!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Gracias por darnos tu apoyo!.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
