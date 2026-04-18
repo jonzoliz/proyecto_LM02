@@ -38,11 +38,6 @@
 <!-- SECCIONES -->
 <div class="container mt-5 pt-5">
 
-  <section id="inicio" class="py-5">
-    <h2>Inicio</h2>
-    <p>Aquí va el contenido</p>
-  </section>
-
   <section id="Sistema de rejilla (Grid System)" class="py-5">
     <h2>Sistema de rejilla (Grid System)</h2>
     <section id="sistema-rejilla" class="py-5">
@@ -96,12 +91,42 @@
 
   <section id="Componentes adaptativos" class="py-5">
     <h2>Componentes adaptativos</h2>
-    <p>Información sobre los componentes adaptativos</p>
+    <p>Navbar (Barra de navegación): Es quizás el componente más <br>
+      importante. Su principal característica es que es "colapsable". En pantallas grandes muestra una lista de enlaces horizontal, <br>
+      pero al reducir el tamaño (en dispositivos móviles), los enlaces se ocultan y aparece un botón de menú (comúnmente llamado "hamburguesa") <br>
+      para ahorrar espacio.
+      <br>
+      <br>
+      Cards (Tarjetas): Son contenedores flexibles que permiten mostrar contenido mezclado (imágenes, texto y botones).<br>
+      Son adaptativas porque se pueden organizar dentro de la rejilla (grid) para que cambien de posición o tamaño según el dispositivo;<br>
+      por ejemplo, pueden aparecer tres en una fila en escritorio y una sola en móvil.
+      <br>
+      <br>
+      Carousel (Carrusel): Es un componente para deslizar imágenes o elementos de forma horizontal. <br>
+      Bootstrap se encarga de que las imágenes se redimensionen automáticamente y que los controles de navegación <br> 
+      (flechas y puntos) sean fáciles de usar tanto con el ratón como con el dedo en pantallas táctiles.
+      <br>
+      <br>
+      Modals (Ventanas modales): Son cuadros de diálogo que aparecen sobre el contenido principal para mostrar avisos o formularios. <br>
+      Estos componentes son responsivos porque ajustan su ancho automáticamente al tamaño de la pantalla y permiten el desplazamiento <br>
+      (scroll) interno si el contenido es muy largo para un teléfono celular.
+      <br>
+      <br>
+    </p>
   </section>
 
   <section id="Imágenes y multimedia responsivos" class="py-5">
     <h2>Imágenes y multimedia responsivos</h2>
-    <p>Información sobre imágenes y multimedia responsivos</p>
+    <p>Uso de img-fluid <br>
+      Es la clase estándar para que las imágenes se adapten al ancho de su contenedor sin perder su proporción. <br> <br>
+      * Propiedad técnica: Aplica max-width: 100% y height: auto. <br><br>
+      * Resultado: La imagen escala hacia abajo si el espacio es reducido, pero nunca supera su tamaño original, evitando que se vea borrosa. <br> <br>
+        Ajuste de videos y contenedores <br> <br>
+        Para elementos multimedia (como iframes de YouTube), se utilizan clases de relación de aspecto (ratio). <br> <br>
+      * Implementación: Se envuelve el video en un contenedor con clases como .ratio y .ratio-16x9. <br> <br>
+      * Resultado: El video mantiene su formato (ej. panorámico) sin importar el tamaño de la pantalla, evitando barras negras o deformaciones. <br> <br>
+
+    </p>
   </section>
 
 </div>
